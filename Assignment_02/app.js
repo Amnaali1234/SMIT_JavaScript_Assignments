@@ -1,0 +1,18 @@
+let username = "Amna";
+let myName = "Ali";
+let message = "Hello World";
+let age = 15;
+let studentsBio =  "Certified Mobile Application Development";
+let pizza = "PIZZA\nPIZZ\nPIZ\nPI\nP";
+let email = "example@example.com";
+let book = "A smarter way to learn JavaScript";
+let end = "“▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬”";
+alert(username + " " + myName);
+alert(`${age} Years old`);
+alert(message);
+alert(studentsBio);
+alert(pizza);
+alert(`My email address is ${email}`);
+alert(`I am trying to learn from the Book ${book}`);
+document.writeln("Yah! I can write HTML content through JavaScript");
+alert(end);
