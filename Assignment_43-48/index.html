@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_43-48</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2 class="title">Mobile Phone Lookup</h2>
+
+    <div class="container">
+
+        <div class="phone">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSsB39MX1FhzBZZ-KQUTDzamR2MAZxzosRnA&s"
+                onclick="showMsg('iPhone 6 Plus')">
+            <h3>iPhone 6 Plus</h3>
+        </div>
+
+        <div class="phone">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4ii3Pp1iA8W1Dxatlf_CGTBlnwSO5QBAFzQ&s"
+                onclick="showMsg('Samsung Galaxy S6')">
+            <h3>Samsung Galaxy S6</h3>
+        </div>
+
+        <div class="phone">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbZvi8Rz3atGT4WVewPzo2If1tRUNbOamqAg&s"
+                onclick="showMsg('V10')">
+            <h3>V10</h3>
+        </div>
+
+        <div class="phone">
+            <img src="https://consumer.huawei.com/dam/content/dam/huawei-cbg-site/common/mkt/plp-x/phones-v5/product-shelf-and-pop-up/view-all/all-pura80-pro.jpg"
+                onclick="showMsg('Huawei P8')">
+            <h3>Huawei P8</h3>
+        </div>
+
+    </div>
+
+
+    <div class="table-container">
+      <h2 id="head2">Student Records</h2>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Action</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Ali</td>
+            <td>10</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Ahmed</td>
+            <td>10</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Sara</td>
+            <td>9</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>Ayesha</td>
+            <td>9</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>Hina</td>
+            <td>8</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+
+        <tr>
+            <td>6</td>
+            <td>Usman</td>
+            <td>10</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+
+        <tr>
+            <td>7</td>
+            <td>Bilal</td>
+            <td>8</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+
+        <tr>
+            <td>8</td>
+            <td>Zain</td>
+            <td>7</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+
+        <tr>
+            <td>9</td>
+            <td>Maria</td>
+            <td>10</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+
+        <tr>
+            <td>10</td>
+            <td>Hamza</td>
+            <td>9</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+
+    </table>
+    </div>
+
+    <div class="problem3">
+
+    <h2>Image Hover Effect</h2>
+
+    <img
+        id="myImage"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSsB39MX1FhzBZZ-KQUTDzamR2MAZxzosRnA&s"
+        alt="Mobile"
+        onmouseover="changeImage()"
+        onmouseout="resetImage()"
+    >
+     <p>Hover over the image to change it</p>
+
+</div>
+
+  <div class="counter-container">
+        <h2 id="count-head">Counter App</h2>
+
+        <h1 id="count">0</h1>
+
+        <div class="buttons">
+            <button id="decreaseBtn" onclick="decrease()">Decrease</button>
+            <button id="increaseBtn" onclick="increase()">Increase</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
