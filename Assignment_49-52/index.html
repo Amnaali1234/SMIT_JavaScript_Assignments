@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JS Assignment</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1 class="title">JavaScript Assignment Dashboard</h1>
+
+<div class="container">
+
+    <!-- SIGNUP -->
+    <div class="card">
+        <h2>Signup Form</h2>
+
+        <form id="signupForm">
+            <input type="text" id="signupName" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="output"></div>
+    </div>
+
+    <!-- READ MORE -->
+    <div class="card">
+        <h2>Product Info</h2>
+
+        <p>
+            Samsung Galaxy S25 Ultra
+            <span id="dots">...</span>
+
+            <span id="moreText">
+                is a premium smartphone with AI features, powerful processor,
+                long battery life and professional camera system.
+            </span>
+        </p>
+
+        <button id="readBtn" onclick="readMore()">Read More</button>
+    </div>
+
+</div>
+
+<div class="student-card">
+
+    <h2>Student Management System</h2>
+
+    <form id="studentForm">
+        <input type="text" id="studentName" placeholder="Student Name" required>
+        <input type="number" id="studentAge" placeholder="Age" required>
+        <input type="text" id="studentCourse" placeholder="Course" required>
+        <button type="submit">Add Student</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Course</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+
+</div>
+
+<div id="editBox">
+    <div class="modal">
+        <h2>Edit Student</h2>
+
+        <input type="text" id="editName">
+        <input type="number" id="editAge">
+        <input type="text" id="editCourse">
+
+        <button onclick="updateRow()">Update</button>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
